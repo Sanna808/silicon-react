@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState, } from 'react'
 import Icon1 from '../assets/images/icon-phone.svg'
 import Icon2 from '../assets/images/icon-contact.svg'
+import FaqList from './FaqList'
+
 
 const FAQ = () => {
+  
   return (
     <section id="questions">
       <div className="container">
@@ -32,45 +35,8 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="faq">
-          <div className="box-faq">
-            <p>Is any of my personal information stored in the App?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-          <div className="box-faq">
-            <p>What formats can I download my transaction history in?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-          <div className="box-faq">
-            <p>Can I schedule future transfers?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-          <div className="box-faq">
-            <p>When can I use Banking App services?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-          <div className="box-faq">
-            <p>Can I create my own password that is easy for me to remember?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-          <div className="box-faq">
-            <p>What happens if I forget or lose my password?</p>
-            <button className="btn-circle">
-              <i className="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
+        <FaqList />
 
-        </div>
         <div className="button">
           <a id="contact" href="#" className="btn-primary">
             <span>Contact us now</span>

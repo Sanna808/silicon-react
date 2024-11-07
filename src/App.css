@@ -766,16 +766,22 @@ header .container {
 }
 #questions .faq .box-faq {
   padding: 0.5rem;
+  max-width: 700px;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 3px 5px rgba(11, 15, 25, 0.1019607843);
+  background-color: var(--bg-box);
+  cursor: pointer;
+}
+
+#questions .faq .question {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 700px;
-  border: none;
-  box-shadow: 0 3px 5px rgba(11, 15, 25, 0.1019607843);
-  background-color: var(--bg-box);
+
 }
 #questions .faq .box-faq p {
-  padding-left: 0.5rem;
+  padding-left: .5rem;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -783,11 +789,34 @@ header .container {
   border: none;
   background-color: var(--color-gray1);
   cursor: pointer;
+
+  transition: all 300ms;
 }
-#questions .btn-circle:hover {
-  background-color: var(--color-gray6);
-  color: var(--color-white);
+
+#questions .answer {
+  padding-left: .5rem;
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+
+  transition: grid-template-rows 300ms;
 }
+
+#questions .open .answer {
+  grid-template-rows: 1fr;
+  padding-top: .7rem;
+}
+
+#questions .open .btn-circle {
+  background-color: var(--color-primary);
+  color: #fff;
+  rotate: 180deg;
+}
+
+#questions .expandable {
+  min-height: 0px;
+}
+
 #questions .button {
   display: flex;
   justify-content: center;
