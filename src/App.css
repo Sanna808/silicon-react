@@ -636,13 +636,20 @@ header .container {
 }
 #reviews .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 1.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 4rem;
   padding-right: 4rem;
 }
+
+#reviews .testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
 #reviews .container .headline h2 {
   margin-top: 0;
 }
@@ -656,28 +663,28 @@ header .container {
   font-size: 14px;
   color: var(--clr-text-light);
 }
-#reviews .review-1 {
+#reviews .review {
   background: var(--bg-box);
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 5px 5px rgba(147, 151, 173, 0.1450980392);
   position: relative;
 }
-#reviews .review-1 .img-quotes {
+#reviews .review .img-quotes {
   position: absolute;
   top: -30px;
   left: 10px;
 }
-#reviews .review-1 .rating {
+#reviews .review .rating {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-#reviews .review-1 .bottom {
+#reviews .review .bottom {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-areas: "user name" "user role";
 }
-#reviews .review-1 .user-1 {
+#reviews .review .user-1 {
   grid-area: user;
 }
 #reviews .review-2 {
