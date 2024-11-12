@@ -812,6 +812,7 @@ header .container {
 #questions .open .answer {
   grid-template-rows: 1fr;
   padding-top: .7rem;
+  padding-bottom: .5rem;
 }
 
 #questions .open .btn-circle {
