@@ -925,7 +925,7 @@ header .container {
   border: 1px solid var(--border-color-2);
   font-size: 1rem;
   padding: 0.3em;
-  width: 200px;
+  width: 250px;
   border-radius: 0.5em;
 }
 #subscribe .input-group {
@@ -939,10 +939,15 @@ header .container {
 }
 #subscribe .input-email {
   grid-area: email;
+  
+  span {
+    color: rgb(219, 70, 70);
+  }
 }
 #subscribe .input-group {
   position: relative;
 }
+
 #subscribe .icon {
   position: absolute;
   top: 50%;
